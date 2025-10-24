@@ -10,6 +10,7 @@ pdfplumber
 python-multipart
 yt-dlp
 numpy
+argon2-cffi==23.2.0  
 google-generativeai
 psycopg2-binary
 aiofiles
