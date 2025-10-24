@@ -24,9 +24,10 @@ app.add_middleware(
 
 
 # Include the user router
-@app.get("/")
-async def root():
-    return {"message": "Backend is working!"}
+@app.get("/test")
+async def test():
+    return {"status": "ok"}
+
 
 app.include_router(user.router, prefix="/user", tags=["User"])
 app.include_router(profile.router)
