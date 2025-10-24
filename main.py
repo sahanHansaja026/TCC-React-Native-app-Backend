@@ -37,10 +37,4 @@ app.include_router(slot.router)
 app.include_router(booking.router)
 app.include_router(paycrditcard.router)
 
-app.include_router(profile.router, prefix="/profile", tags=["Profile"])
-app.include_router(payment.router, prefix="/payment", tags=["Payment"])
-app.include_router(vehicals.router, prefix="/vehicals", tags=["Vehicals"])
-app.include_router(slot.router, prefix="/slot", tags=["Slot"])
-app.include_router(booking.router, prefix="/booking", tags=["Booking"])
-app.include_router(paycrditcard.router, prefix="/paycrditcard", tags=["PayCreditCard"])
 
