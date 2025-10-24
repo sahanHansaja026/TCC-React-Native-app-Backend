@@ -7,7 +7,7 @@ import models
 from routes import user,profile,payment,vehicals,slot,booking,paycrditcard
 
 logging.basicConfig(level=logging.INFO,format='%(asctime)s - %(levelname)s - %(message)s')
-origins = ["http://localhost:3000", "http://192.168.1.4:19006"]
+origins = ["*"]  # allow all origins
 
 models.Base.metadata.create_all(bind=engine)
 
