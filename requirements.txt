@@ -2,7 +2,6 @@ fastapi
 uvicorn
 sqlalchemy
 pydantic
-passlib[bcrypt]
 bcrypt
 python-jose[cryptography]
 psycopg2-binary
@@ -15,3 +14,6 @@ google-generativeai
 aiofiles
 youtube-transcript-api
 python-dotenv
+argon2-cffi
+passlib
+
