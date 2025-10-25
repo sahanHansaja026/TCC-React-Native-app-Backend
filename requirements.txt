@@ -3,6 +3,7 @@ uvicorn
 sqlalchemy
 pydantic
 passlib[bcrypt]
+bcrypt
 python-jose[cryptography]
 psycopg2-binary
 sumy
@@ -10,9 +11,7 @@ pdfplumber
 python-multipart
 yt-dlp
 numpy
-argon2-cffi 
 google-generativeai
-psycopg2-binary
 aiofiles
 youtube-transcript-api
 python-dotenv
