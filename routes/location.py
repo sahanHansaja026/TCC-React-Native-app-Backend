@@ -14,7 +14,13 @@ def get_parking_locations(db: Session = Depends(get_db)):
     ).all()
 
     return [
-        {"lat": float(lot.latitude), "lng": float(lot.longitude)}
+        {
+            "parkinglotid": lot.parkinglotid,
+            "lotname": lot.lotname,
+            "location": lot.location,
+            "lat": float(lot.latitude),
+            "lng": float(lot.longitude)
+        }
         for lot in parking_lots
     ]
 
